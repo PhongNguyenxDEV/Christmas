@@ -1,0 +1,117 @@
+    html,body{
+      margin:0;
+      height:100%;
+      background:#0f253b;
+      overflow:hidden;
+      font-family:system-ui;
+    }
+
+    /* canvas nằm dưới card */
+    canvas{
+      position:fixed;
+      inset:0;
+      display:block;
+      pointer-events:none;
+      z-index:1;
+    }
+
+    .center-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    padding: 25px;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    text-align: center;
+    font-family: system-ui, sans-serif;
+    z-index: 20;
+    }
+
+    /* Avatar */
+    .center-card .avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    }
+    .center-card .avatar:hover {
+    transform: scale(1.15);
+    }
+
+    /* Countdown text */
+    .center-card h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    }
+    .center-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+    .center-card p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    }
+
+    /* Github button */
+    .github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 25px;
+    background: rgba(0, 0, 0, 0.15);
+    color: #9b9b9b;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.2s;
+    }
+    .github-btn:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.05);
+    }
+    .github-btn .icon {
+    width: 20px;
+    height: 20px;
+    }
+
+    /* Credit */
+    .center-card .credit {
+    font-size: 10px;
+    color: rgba(114, 114, 114, 0.6);
+    margin-top: 3px;
+    }
+    #cloudCanvas, #snowCanvasWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    }
+
+    #snowCanvas {
+    width: 100%;
+    height: 100%;
+    }
+
+
+#backgroundCanvas, #snowCanvasWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#snowCanvas {
+  width: 100%;
+  height: 100%;
+}
+
